@@ -4,6 +4,7 @@ import 'package:blocsample/data/cart_service.dart';
 import 'package:blocsample/models/cart.dart';
 
 class CartBloc {
+  // ignore: close_sinks
   final cartStreamController = StreamController.broadcast();
 
   Stream get getStream => cartStreamController.stream;

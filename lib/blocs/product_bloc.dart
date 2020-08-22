@@ -4,6 +4,7 @@ import 'package:blocsample/data/product_service.dart';
 import 'package:blocsample/models/product.dart';
 
 class ProductBloc {
+  // ignore: close_sinks
   final productStreamController = StreamController.broadcast();
 
   Stream get getStream => productStreamController.stream;
